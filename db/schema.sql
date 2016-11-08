@@ -1,0 +1,11 @@
+CREATE DATABASE toDoSeq_db;
+USE toDoSeq_db;
+
+CREATE TABLE toDoList
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	itemName VARCHAR(255) NOT NULL,
+	isDone BOOLEAN,
+	date TIMESTAMP,
+	PRIMARY KEY (id)
+);

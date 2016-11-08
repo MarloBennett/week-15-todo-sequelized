@@ -1,0 +1,48 @@
+body {
+	background-color: #709de5;
+	color: #284168;
+}
+
+img {
+	width: 350px;
+	margin-top: 30px;
+	border-color: #284168;
+	border-width: 2px;
+	border-style: solid;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1, h2 {
+	text-align: center;
+	font-family: "Lobster", cursive;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 35px;
+	border-bottom: solid 2px #284168;
+}
+
+#to-do, #done, #add-task {
+	float: left;
+	margin-left: 90px;
+}
+
+li, label, button {
+	font-family: "Ubuntu Condensed", sans-serif;
+	font-size: 20px;
+}
+
+button {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+input {
+	margin-left: 3px;
+}

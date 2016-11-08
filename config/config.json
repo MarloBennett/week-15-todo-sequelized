@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "marlo",
+    "password": "marlosql",
+    "database": "toDoSeq_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "marlo",
+    "password": "marlosql",
+    "database": "toDoSeq_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "izjcqwpx8fct6gjy",
+    "password": "dgax55ilazhy975p",
+    "database": "t0t9w859m1wbqdfp",
+    "host": "ehc1u4pmphj917qf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

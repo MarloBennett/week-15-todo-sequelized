@@ -1,0 +1,73 @@
+<div>
+  <img src="/assets/images/postit.jpg" alt="image of post-it notes" id="postits">
+</div>
+
+<div id="main-content">
+
+  <div id="main-head">
+    <h1>To-Do List</h1>
+  </div>
+
+  <div id="to-do">
+    <h2>Tasks to Do</h2>
+
+<!--
+loop through database items and display the ones that have a false value for isDone
+ -->
+    <ul>
+      {{#each toDoList}}
+        {{#unless isDone}}
+          <li>
+            {{itemName}}
+<!--
+input for changing item to done
+ -->
+            <form action="list/update/{{id}}?" method="POST">
+              
+              <button name="isDone" value="true" type="submit">Done!</button>
+            </form>
+
+          </li>
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div id="done">
+    <h2>Tasks That Are Done</h2>
+
+<!--
+loop through database items and display the ones that have a true value for isDone
+ -->
+    <ul>
+      {{#each toDoList}}
+        {{#if isDone}}
+          <li>
+            {{itemName}}
+            
+          </li>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+
+<!--
+section to add an item to the list
+ -->
+  <div id="add-task">
+    <h2>Add a Task</h2>
+
+<!--
+input for new item
+ -->
+     <form action="list/create/{{id}}?" method="POST">
+
+        <label>New task:</label>
+         <input type="hidden" name="isDone" value="0">
+        <input type="text" name="itemName">
+        <br />
+      <button type="submit">Add task</button>
+    </form>
+  </div>
+
+</div>
