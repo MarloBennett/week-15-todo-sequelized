@@ -6,6 +6,7 @@ CREATE TABLE toDoList
 	id INT NOT NULL AUTO_INCREMENT,
 	itemName VARCHAR(255) NOT NULL,
 	isDone BOOLEAN,
-	date TIMESTAMP,
+	createdAt DATETIME,
+    updatedAt DATETIME,
 	PRIMARY KEY (id)
 );
