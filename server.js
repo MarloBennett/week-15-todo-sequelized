@@ -6,6 +6,9 @@ var exphbs = require("express-handlebars");
 var routes = require("./controllers/list_controllers.js");
 var models = require("./models/");
 
+var Task = require("./models")["Task"]
+Task.sync();
+
 var app = express();
 
 var PORT = process.env.PORT || 3000;
